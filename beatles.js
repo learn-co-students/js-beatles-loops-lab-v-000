@@ -1,7 +1,7 @@
 'use strict';
 
 function theBeatlesPlay(musicians, instruments) {
-  var arr = []
+  var arr = [];
   for (var i = 0; i < musicians.length; i++) {
     arr.push(musicians[i] + ' plays ' + instruments[i]);
   }
@@ -23,6 +23,6 @@ function iLoveTheBeatles(num) {
   do {
     arr.push("I love the Beatles!");
     num++
-  } while (num < 15)
+  } while (num < 15);
   return arr;
 }
