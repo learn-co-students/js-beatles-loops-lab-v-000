@@ -1,4 +1,22 @@
 'use strict';
+  var jasmine = require('jasmine-node');
+  var jsdom = require('jsdom');
+  var path = require('path');
+  describe("Jasmine Walkthrough", function(){
+  var theBeatlesPlay, johnLennonFacts, iLoveTheBeatles;
+  beforeEach(function(done) {
+   var codeJs = path.resolve(__dirname, '..', 'beatles.js');
+   jsdom.env({
+     html: '<div></div>',
+     scripts: [codeJs],
+     onload: function(window) {
+        theBeatlesPlay = window.theBeatlesPlay;
+        johnLennonFacts = window.johnLennonFacts;
+        iLoveTheBeatles = window.iLoveTheBeatles;
+       done();
+     }
+   });
+  });
 
 describe('theBeatlesPlay', function(){
   var musicians;
@@ -38,4 +56,4 @@ describe('iLoveTheBeatles', function(){
 
   });
 });
-
+});
