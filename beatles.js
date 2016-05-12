@@ -1,10 +1,10 @@
 'use strict';
 
 function theBeatlesPlay(musicians, instruments) {
-  let memo = [];
-  let index = 0;
+  var memo = [];
+  var index = 0;
 
-  for (let musician of musicians) {
+  for (var musician of musicians) {
     memo.push(musician + ' plays ' + instruments[index]);
     index++;
   }
@@ -14,10 +14,10 @@ function theBeatlesPlay(musicians, instruments) {
 }
 
 function johnLennonFacts() {
-  let note = [];
-  let index = 0;
+  var note = [];
+  var index = 0;
 
-  for (let fact of facts()) {
+  for (var fact of facts()) {
     note.push(fact + '!!!');
     index++;
   }
@@ -36,7 +36,7 @@ function facts() {
 }
 
 function iLoveTheBeatles(number) {
-  let message = [];
+  var message = [];
 
   do {
     message.push(loveNote());
