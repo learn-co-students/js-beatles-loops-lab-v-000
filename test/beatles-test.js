@@ -1,5 +1,7 @@
 /*global beforeEach, describe, it */
 
+'use strict';
+
 const expect = require('chai').expect
 const fs = require('fs')
 const jsdom = require('mocha-jsdom')
