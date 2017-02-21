@@ -20,3 +20,12 @@ factNum++;
 }
 return jLFacts
 }
+
+function iLoveTheBeatles(number) {
+var love = [];
+do {
+love.push("I love the Beatles!");
+} while (love <=number.length);
+
+return love
+}
