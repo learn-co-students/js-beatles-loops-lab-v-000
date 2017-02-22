@@ -1,8 +1,7 @@
 function theBeatlesPlay(musicians, instruments) {
   var ary = []; 
-  var l = musicians.length;
   var i = 0;
-  for (var i = 0; i < l; i++) {
+  for (i = 0; i < musicians.length; i++) {
     ary.push(musicians[i] + " plays " + instruments[i]);
     }
     return ary;
@@ -25,7 +24,7 @@ function iLoveTheBeatles(num) {
   var item = "I love the Beatles!";
   do {
     ary.push(item);
-    num++
+    num++;
    } while (num < 15);
 return ary;  
 }
