@@ -15,17 +15,18 @@ function johnLennonFacts(facts){
 var factNum = 0;
 var jLFacts = []
 while (factNum <facts.length) {
-jLFacts.push(facts[0] + "!!!")
+jLFacts.push(facts[factNum] + "!!!")
 factNum++;
 }
 return jLFacts
 }
 
 function iLoveTheBeatles(number) {
-var love = [];
-do {
-love.push("I love the Beatles!");
-} while (love <=number.length);
+  var love = [];
+  do {
+    love.push("I love the Beatles!");
+    number++
+  } while (number <15)
 
-return love
+  return love
 }
