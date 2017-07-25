@@ -1,35 +1,41 @@
 function theBeatlesPlay(musicians, instruments) {
-  var artistInstrument = []
+  var result = []
 
-  for (let i = 0; i < musicians.length; i++) {
-    artistInstrument.push(`${musicians[i]} plays ${instruments[i]}`)
+  for (let i = 0 ; i < instruments.length ; i++ ){
+    result.push(`${musicians[i]} plays ${instruments[i]}`)
   }
-  return artistInstrument
+
+  return result
 }
 
 
 function johnLennonFacts(facts){
-  for (let i = 0; i < facts.length; i++) {
-    facts[i] = `${facts[i]}!!!`;
+  var result = []
+
+  for (let i=0; i<facts.length; i++){
+    result.push(facts[i] + "!!!")
   }
-  return facts;
+  return result
 }
 
 
 function iLoveTheBeatles(num){
-  var answer = []
+  var result = []
+
   do {
-    answer.push("I love the Beatles!")
-    num -= 1
-  } while (num < 15 && num >= 0);
-  
-  return answer
+    result.push("I love the Beatles!");
+    num++
+  }
+  while (num < 15);
+
+  return result
 }
+
 // "John Lennon plays guitar"
 
 
-// Then, implement a do-while loop inside the function that adds "I love the Beatles!" to the empty array. 
-// Then the loop should increment the number passed in as a parameter. The condition of the loop should check to see 
+// Then, implement a do-while loop inside the function that adds "I love the Beatles!" to the empty array.
+// Then the loop should increment the number passed in as a parameter. The condition of the loop should check to see
 // that the parameter number is less than 15. The function should return the array with the strings "I love the Beatles!".
 
 
