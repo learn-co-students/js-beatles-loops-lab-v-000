@@ -18,13 +18,9 @@ function johnLennonFacts(facts) {
 
 function iLoveTheBeatles(num) {
   var fanMessage = [];
-  var i = 0
   do {
-    if (num < 7) {
-      fanMessage.push("I love the Beatles!");
-      i++;
-      return fanMessage;
-    }
+    fanMessage.push("I love the Beatles!");
+    num++;
   } while (num < 15);
-  return "I love the Beatles!"
+  return fanMessage;
 }
