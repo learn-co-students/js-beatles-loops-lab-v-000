@@ -1,5 +1,5 @@
 function theBeatlesPlay(musicians, instruments) {
-  var array = []
+  const array = []
   for (let i = 0; i < musicians.length; i++) {
     array.push(`${musicians[i]} plays ${instruments[i]}`)
   }
@@ -7,16 +7,17 @@ function theBeatlesPlay(musicians, instruments) {
 }
 
 function johnLennonFacts(facts) {
-  var i = 0
+  const shoutedFacts = []
+  let i = 0
   while (i < facts.length ) {
-    facts[i] = `${facts[i]}!!!`
+    shoutedFacts.push(`${facts[i]}!!!`)
     i++
   }
-  return facts
+  return shoutedFacts
 }
 
 function iLoveTheBeatles(num) {
-  var array = []
+  const array = []
   do {
     array.push("I love the Beatles!")
     num++
