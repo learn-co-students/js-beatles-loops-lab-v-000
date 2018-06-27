@@ -3,12 +3,12 @@ function theBeatlesPlay(musicians, instruments) {
 
   for (var i = 0 ; i < musicians.length; i++) {
     strings.push(musicians[i]+" plays "+instruments[i]);
-  };
+  }
   return strings;
 }
 
 function johnLennonFacts(facts) {
-  counter = 0
+  let counter = 0
   
   while (counter < facts.length) {
     facts[counter] = facts[counter]+"!!!";
