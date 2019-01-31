@@ -7,7 +7,7 @@ function theBeatlesPlay(musicians, instruments){
 }
 
 function johnLennonFacts(facts){
-  i = 0;
+  var i = 0;
   var exclamationArray = new Array();
   while (i < facts.length) {
     exclamationArray.push(facts[i] + "!!!")
